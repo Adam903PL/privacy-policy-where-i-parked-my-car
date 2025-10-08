@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Where I Parked My Car</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - SOS Flasher</title>
   <style>
-    /* === Minimalist Dark CSS === */
     body {
       margin: 0;
       padding: 0;
       font-family: 'Helvetica', 'Arial', sans-serif;
-      background-color: #111; /* ciemne tło */
-      color: #eee; /* jasny tekst */
+      background-color: #111;
+      color: #eee;
       line-height: 1.6;
     }
 
@@ -19,7 +18,7 @@
       max-width: 800px;
       margin: 50px auto;
       padding: 30px;
-      background-color: #1a1a1a; /* lekko jaśniejsze tło kontenera */
+      background-color: #1a1a1a;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.5);
     }
@@ -36,31 +35,16 @@
       margin-top: 30px;
       margin-bottom: 10px;
       font-weight: 600;
-      border-bottom: 1px solid #555; /* subtelne podkreślenie */
+      border-bottom: 1px solid #555;
       padding-bottom: 5px;
     }
 
-    ul {
-      margin-left: 20px;
-      padding-left: 0;
-    }
+    ul { margin-left: 20px; padding-left: 0; }
+    li { margin-bottom: 10px; }
+    p { margin-bottom: 15px; }
 
-    li {
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin-bottom: 15px;
-    }
-
-    a {
-      color: #ccc;
-      text-decoration: underline;
-    }
-
-    a:hover {
-      color: #fff;
-    }
+    a { color: #ccc; text-decoration: underline; }
+    a:hover { color: #fff; }
 
     footer {
       margin-top: 50px;
@@ -73,40 +57,55 @@
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p>Effective date: September 19, 2025</p>
+    <p>Effective date: October 8, 2025</p>
 
     <h2>1. Data Collected</h2>
-    <p>The app <strong>Where I Parked My Car</strong> collects user location data solely for the purpose of:</p>
+    <p>The app <strong>SOS Flasher</strong> requires access to the device's <strong>camera and flashlight</strong> in order to send light signals (e.g. Morse code) using the LED. The app does <strong>not capture or store any images or video</strong>.</p>
+    <p>The app may also collect basic, non-personal technical data automatically provided by advertising SDKs (e.g. AdMob), such as device type, OS version, and anonymous identifiers used for ad delivery.</p>
+
+    <h2>2. Data Usage</h2>
+    <p>Camera and flashlight permissions are used solely to control the flashlight and send Morse code messages. No photos, videos, or sound are recorded.</p>
+    <p>Advertising SDKs (Google AdMob) may use collected data to display personalized or non-personalized ads according to their privacy policy.</p>
+
+    <h2>3. Data Storage</h2>
+    <p>The app does not store or transfer any personal data to external servers. Any temporary data used by advertising networks or the operating system is handled according to their respective policies.</p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>SOS Flasher uses the following third-party services:</p>
     <ul>
-      <li>saving selected locations,</li>
-      <li>guiding the user to the saved location using maps.</li>
+      <li><strong>Google AdMob</strong> – for displaying ads.  
+        AdMob may collect device identifiers and use them for ad targeting.  
+        You can review Google’s privacy policy here:  
+        <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>
+      </li>
     </ul>
 
-    <h2>2. Data Storage</h2>
-    <p>All location data is <strong>stored locally on the user's device</strong>. The app does not transmit location data to any server or third party.</p>
-
-    <h2>3. Data Usage</h2>
-    <p>Collected location data is used only for app functionality (saving locations and navigation to them).</p>
-
-    <h2>4. Data Sharing</h2>
-    <p>The app <strong>does not share location data with any third party</strong> and does not use any analytics or advertising services that collect location data directly from the app.</p>
-
-    <h2>5. Ads</h2>
-    <p>The app displays ads provided by third-party ad networks (e.g., AdMob). Some of these networks may collect device identifiers or other information to serve personalized ads. No location data collected by the app is shared with advertisers.</p>
-
-    <h2>6. User Rights</h2>
-    <p>Users can at any time:</p>
+    <h2>5. Permissions Explained</h2>
     <ul>
-      <li>delete saved locations from the app,</li>
-      <li>uninstall the app, which will remove all local data.</li>
+      <li><strong>android.permission.CAMERA</strong> – used only to control the device's flashlight, not to take photos or record video.</li>
+      <li><strong>android.permission.FLASHLIGHT</strong> – required for blinking SOS signals.</li>
+      <li><strong>android.permission.INTERNET</strong> & <strong>ACCESS_NETWORK_STATE</strong> – needed for displaying ads (AdMob).</li>
+      <li><strong>com.google.android.gms.permission.AD_ID</strong> – used by Google services to provide ad-related functionality.</li>
     </ul>
 
-    <h2>7. Contact</h2>
-    <p>If you have any questions regarding this Privacy Policy or the app's functionality, you can contact us at:</p>
-    <p>📧 adam.pukaluk.dev@gmail.com</p>
+    <h2>6. Data Sharing</h2>
+    <p>The app itself <strong>does not share any user data</strong>. AdMob may collect and process anonymous information in accordance with Google’s policies.</p>
+
+    <h2>7. User Rights</h2>
+    <ul>
+      <li>You can deny camera permission – in that case, the flashlight feature will not work.</li>
+      <li>You can uninstall the app at any time to delete all locally stored data.</li>
+    </ul>
+
+    <h2>8. Children’s Privacy</h2>
+    <p>This app is not directed to children under 13 years old. The developer does not knowingly collect any personal information from children.</p>
+
+    <h2>9. Contact</h2>
+    <p>If you have any questions or concerns regarding this Privacy Policy, please contact:</p>
+    <p>📧 <a href="mailto:adam.pukaluk.dev@gmail.com">adam.pukaluk.dev@gmail.com</a></p>
 
     <footer>
-      &copy; 2025 Where I Parked My Car. All rights reserved.
+      &copy; 2025 SOS Flasher. All rights reserved.
     </footer>
   </div>
 </body>
